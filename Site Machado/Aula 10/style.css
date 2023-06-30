@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,900;1,200;1,500&display=swap');
+
+/*
+#d3d5b0
+#b5cea4
+#9dc19d
+#8c7c62
+#71443f
+*/
+
+:root{
+    --corBege1:#d3d5b0;
+    --cor2:#b5cea4;
+    --cor3:#9dc19d;
+    --cor4:#8c7c62;
+    --cor5:#71443f;
+    
+}
+
+*{
+    margin: 0;/*Espaço fora da caixa*/
+    padding: 0;/* Espaço dentro da caixa*/
+}
+
+body{
+    background-color: var(--corBege1);
+    font-family: 'Ysabeau Infant', sans-serif;;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3),var(--corBege1));
+    padding-top: 50px;
+    text-align: center;
+    min-height: 130px;
+}
+
+h1{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+header > p{
+    color:var(--cor4);
+}
+
+nav{
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow:3px 2px 4px 2px;
+}
+
+nav > a:hover{
+    background-color: var(--cor4);
+    color: black;
+}
+
+nav > a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+main{
+    background-color: white;
+    min-width: 320px;
+    max-width: 1000px;
+    margin:auto;
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 2px 5px 0px;
+
+}
+
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-align: center;
+    margin: 20px 0;
+}
+
+main p {
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 40px;
+    margin: 15px 0;
+}
+
+main img{
+    width: 50%;
+    border: 10px double var(--cor3);
+
+}
+
+main iframe{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+main img, iframe{
+    border: 10px double var(--cor3);
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+aside{
+    background-color: #9dc19d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+aside > ul{
+    list-style-position: inside;
+    text-align: justify;
+}
+
+aside > h3{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: -15px -10px 0 -10px;
+    border-radius: 5px 5px 0 0;
+}
+
+footer{
+    font-size: 12px;
+    text-align: center;
+    padding: 3px;
+
+}
+
+footer > a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
